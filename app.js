@@ -19,18 +19,17 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
 
-    //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
-    //label
-    var label=document.createElement("label");//label
-    //input (text)
-    var editInput=document.createElement("input");//text
-    //button.edit
-    var editButton=document.createElement("button");//edit button
+    
+    var checkBox=document.createElement("input");
+    
+    var label=document.createElement("label");
+    
+    var editInput=document.createElement("input");
+    
+    var editButton=document.createElement("button");
 
-    //button.delete
-    var deleteButton=document.createElement("button");//delete button
-    var deleteButtonImg=document.createElement("img");//delete button image
+    var deleteButton=document.createElement("button");
+    var deleteButtonImg=document.createElement("img");
 
     label.innerText=taskString;
     label.className='task';
@@ -40,7 +39,7 @@ var createNewTaskElement=function(taskString){
     editInput.type="text";
     editInput.className="task";
 
-    editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
+    editButton.innerText="Edit"; 
     editButton.className="edit";
 
     deleteButton.className="delete";
